@@ -4,13 +4,79 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>myWebPage</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <title>Be3</title>
+  <style>
+    @media screen and (min-width: 767px) { /*ウィンドウ幅が767px以上の場合に適用*/
+      #menu-bg {
+      background-color: #00FFFF; /*青色*/
+      }
+    }
+
+    @media screen and (max-width: 479px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/
+      #menu-bg {
+      background-color: #00FF00; /*緑色*/
+      }
+    }
+
+    header{
+      z-index: 10;
+      position: absolute;
+      top: 0%;
+      background-color: white;
+      width: 100%;
+      text-align: center;
+      z-index: 2;
+      box-shadow: 0px 0px 0px 0px rgba(255,255,255);
+    }
+ 
+    ul li {
+    display: inline-block;
+    padding: 26px 10px 20px 10px;
+    } 
+
+    #top{
+      position: relative;
+    }
+
+    #top h1{
+      position: absolute;
+      color: white;
+      top: 50%;
+      left: 50%;
+      font-size:2.5em;
+      -ms-transform: translate(-50%,-50%);
+      -webkit-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
+      margin:0;
+      padding:0;
+    }
+
+    #top img{
+      width:100%;
+    }
+  </style>
 </head>
 
 <body>
+<header>
+  <ul>
+    <li><a href="https://note.com/neko_be3">note</a></li>
+    <li><a href="https://twitter.com/Blossomrail">twitter</a></li>
+    <li><a href="https://wapiwapi1729.wixsite.com/website">WAPLI</a></li>
+  </ul>
+</header>
 
-This is my web-page.
- 
+<div id="top">
+  <img src="images/20190813_CambrigeMemory.jpg">
+    <h1>
+      The website about Be3
+    </h1>
+  </div>
+
+ <script>
+   
+ </script>
 </body>
 
 </html>
