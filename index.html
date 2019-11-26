@@ -9,7 +9,7 @@
   <style>
     @media screen and (min-width: 767px) { /*ウィンドウ幅が767px以上の場合に適用*/
       header{
-        position: absolute, sticky;
+        position: relative;
         top: 0%;
         background-color: white;
         width: 100%;
@@ -40,7 +40,7 @@
 
     @media screen and (max-width: 480px) { /*ウィンドウ幅が最大480pxまでの場合に適用*/
       header{
-        position: absolute;
+        position: relative;
         top: 0%;
         background-color: white;
         width: 100%;
@@ -58,7 +58,7 @@
         position: absolute;
         color: white;
         top: 50%;
-        /*left: 50%;*/
+        left: 50%;
         font-size:1.2em;
         -ms-transform: translate(-50%,-50%);
         -webkit-transform: translate(-50%,-50%);
@@ -74,6 +74,7 @@
     }
 
     #center img{
+      z-index:0;
       width:100%;
     }
   </style>
@@ -84,7 +85,7 @@
   <ul>
     <li><a href="">About me</a></li>
     <li><a href="https://note.com/neko_be3">note</a></li>
-    <li><a href="https://Twitter.com/Blossomrail">twitter</a></li>
+    <li><a href="https://Twitter.com/Blossomrail">Twitter</a></li>
     <li><a href="https://github.com">GitHub</a></li>
   </ul>
 </header>
