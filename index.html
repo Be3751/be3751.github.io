@@ -14,7 +14,7 @@
         background-color: white;
         width: 100%;
         text-align: center;
-        z-index: 1;
+        z-index: 1; /*重なりの順序を指定できる。0が最初。*/
         box-shadow: 0px 0px 0px 0px rgba(255,255,255);
       }
  
@@ -37,7 +37,7 @@
       }
     }
 
-    @media screen and (max-width: 479px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/
+    @media screen and (max-width: 480px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/
       header{
         position: absolute;
         top: 0%;
@@ -59,9 +59,9 @@
         top: 50%;
         left: 50%;
         font-size:1em;
-        /*-ms-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
         -webkit-transform: translate(-50%,-50%);
-        transform: translate(-50%,-50%);*/
+        transform: translate(-50%,-50%);
         margin:0;
         padding:0;
       }
@@ -71,7 +71,7 @@
       position: relative;
     }
 
-    #top img{
+    #center img{
       width:100%;
     }
   </style>
@@ -82,7 +82,7 @@
   <ul>
     <li><a href="https://note.com/neko_be3">note</a></li>
     <li><a href="https://twitter.com/Blossomrail">twitter</a></li>
-    <li><a href="https://wapiwapi1729.wixsite.com/website">WAPLI</a></li>
+    <li><a href="https://github.com">GitHub</a></li>
   </ul>
 </header>
 
