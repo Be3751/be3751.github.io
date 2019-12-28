@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
   <title>Be3</title>
   <style>
+    /* PC */
     @media screen and (min-width: 767px) { /*ウィンドウ幅が767px以上の場合に適用*/
       header{
         position: relative;
@@ -37,8 +38,13 @@
         padding:0;
         word-break: break-all; /*改行制限を指定するプロパティ*/
       }
+
+      #center img{
+        width:100%;
+      }
     }
 
+    /* スマホ */
     @media screen and (max-width: 480px) { /*ウィンドウ幅が最大480pxまでの場合に適用*/
       header{
         position: relative;
@@ -51,7 +57,7 @@
  
       ul li {
         display: inline-block;
-        padding: 2% 0; /*vertical horizontal*/
+        padding: 2% 2%; /*vertical horizontal*/
       } 
 
       #center h1{
@@ -67,14 +73,15 @@
         padding:0;
         word-break: break-all; /*改行制限を指定するプロパティ*/
       }
+
+      #center img{
+        width:100vw;
+        height:100vh;
+      }
     }
 
     #center{
       position: relative;
-    }
-
-    #center img{
-      width:100%;
     }
   </style>
 </head>
