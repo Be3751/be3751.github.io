@@ -42,6 +42,7 @@
       #center img{
         width:100%;
       }
+      
     }
 
     /* スマホ */
@@ -56,7 +57,7 @@
       }
  
       ul li {
-        display: inline-block;
+        display: inline-block; /* 要素が横並びになる */
         font-size:1em;
         padding: 2% 2%; /*vertical horizontal*/
       } 
@@ -64,15 +65,15 @@
       #center h1{
         position: absolute;
         color: white;
-        top: 50%;
-        left: 50%;
+        /* top: 50%;
+        left: 50%; */
         font-size:1.4em;
-        /* -ms-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
         -webkit-transform: translate(-50%,-50%);
         transform: translate(-50%,-50%);
         margin:0;
         padding:0;
-        word-break: break-all; 改行制限を指定するプロパティ */
+        word-break: break-all; /* 改行制限を指定するプロパティ */
       }
 
       #center img{
@@ -84,16 +85,21 @@
     #center{
       position: relative;
     }
+
+    .icon{
+        width: 50px;
+        height: 50px;
+      }
   </style>
 </head>
 
 <body>
 <header>
   <ul>
-    <li><a href="">About me</a></li>
-    <li><a href="https://note.com/neko_be3">note</a></li>
-    <li><a href="https://Twitter.com/Blossomrail">Twitter</a></li>
-    <li><a href="https://github.com">GitHub</a></li>
+    <li><a href="aboutme.html"><img src="images/aboutmeIcon.png" class="icon" id="aboutmeIcon"></a></li>
+    <li><a href="https://note.com/neko_be3"><img src="images/noteIcon.png" class="icon" id="noteIcon"></a></li>
+    <li><a href="https://Twitter.com/Blossomrail"><img src="images/twitterIcon.jpg" class="icon" id="twitterIcon"></a></li>
+    <li><a href="https://github.com"><img src="images/githubIcon.png" class="icon" id="githubIcon"></a></li>
   </ul>
 </header>
 
