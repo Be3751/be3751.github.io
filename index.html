@@ -43,9 +43,13 @@
         width:100%;
       }
       
+      .icon{
+        width: 80px;
+        height: 80px;
+      }
     }
 
-    /* スマホ */
+    /* iPhone8Plusまで */
     @media screen and (max-width: 480px) { /*ウィンドウ幅が最大480pxまでの場合に適用*/
       header{
         position: relative;
@@ -63,33 +67,33 @@
       ul li {
         display: inline-block; /* 要素が横並びになる */
         font-size:1em;
-        padding: 2% 5%; /*vertical horizontal*/
-      } 
+        padding: 0% 4%; /* vertical horizontal */
+      }
 
       #center h1{
         position: absolute;
         color: white;
         top: 50%;
-        /* left: 50%; */
-        font-size:1.4em;
-        /* -ms-transform: translate(-50%,-50%);
-        -webkit-transform: translate(-50%,-50%);
-        transform: translate(-50%,-50%); */
+        left: 15%;
+        font-size:1.0em;
+        /* -ms-transform: translate(-50%,-15%);
+        -webkit-transform: translate(-50%,-15%);
+        transform: translate(-50%,-15%); */
         margin:0;
-        padding: 0 19%;
-        word-break: break-all; /* 改行制限を指定するプロパティ */
+        padding: 0 16%;
+        /* word-break: break-all; アルファベット等の改行制限を指定するプロパティ */
       }
 
       #center img{
         width:100vw;
         height:100vh;
       }
-    }
 
-    .icon{
-        width: 50px;
-        height: 50px;
+      .icon{
+        width: 40px;
+        height: 40px;
       }
+    }
   </style>
 </head>
 
@@ -105,10 +109,8 @@
 
 <div id="center">
   <img src="images/20190813_CambrigeMemory.jpg">
-    <h1>
-      The website about Be3
-    </h1>
-  </div>
+    <h1>The website about me</h1>
+</div>
 
  <script>
    
