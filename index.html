@@ -10,6 +10,10 @@
     /* iPhone8Plusまで */
     @media screen and (max-width: 480px) { /*ウィンドウ幅が最大480pxまでの場合に適用*/
       /* 以下、上部（ツールバー）のcss指定 */
+      body{
+        overflow: scroll;
+      }
+
       #toolbar{
         position: absolute;
         width: 100%;
@@ -39,8 +43,8 @@
 
       #myphoto{
         position: absolute;
-        width: 180px;
-        height: 180px;
+        width: 50%;
+        height: 25%;
         top: 20%;
         left: 30%;
         border-radius: 50%; /*　円にする　*/
@@ -87,6 +91,84 @@
 
     /* PC */
     @media screen and (min-width: 767px) { /*ウィンドウ幅が767px以上の場合に適用*/
+      body{
+        overflow: scroll;
+      }
+
+      #toolbar{
+        position: absolute;
+        width: 100%;
+        height:14%;
+        background-color: blueviolet;
+      }
+
+      #title{
+        position: absolute;
+        top: -10%;
+        left: 3%;
+        color: white;
+        font-size:xx-large;
+      }
+
+      #toolbar_button{
+        right: 5%;
+        position: absolute;
+      }
+
+      /* 以下、中心部のcss指定 */
+      center{
+        position: relative;
+        width: 100%;
+        height: 75%;
+        top:40%;
+      }
+
+      #myphoto{
+        position: absolute;
+        width: 15%;
+        height: 30%;
+        top: 20%;
+        left: 5%;
+        border-radius: 50%; /* 円にする */
+      }
+
+      #profile{
+        position: absolute;
+        top:15%;
+        left: 25%;
+      }
+
+      #name{
+        font-size:xx-large;
+      }
+
+      span{
+        text-align: center;
+      }
+      
+      .icon{
+        width: 50px;
+        height: 50px;
+      }
+
+      /* 以下、下部のcss指定 */
+      footer{
+        width: 100%;
+        bottom: 0;
+        position: absolute;
+      }
+
+      ul{
+        text-align: center;
+      }
+
+      ul li{
+        display: inline-block;
+      }
+
+      #copyright{
+        text-align: center;
+      }
     }
   </style>
 </head>
