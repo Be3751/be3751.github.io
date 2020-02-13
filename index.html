@@ -15,14 +15,13 @@
       }
 
       #toolbar{
-        position: absolute;
         width: 100%;
-        height:11%;
+        height:13vh;
         background-color: blueviolet;
       }
 
       #title{
-        position: absolute;
+        /* position: absolute; */
         top: -15%;
         color: white;
         font-size:x-large;
@@ -30,35 +29,34 @@
 
       #toolbar_button{
         right: 5%;
-        position: absolute;
+        /* position: absolute; */
       }
 
       /* 以下、中心部のcss指定 */
       center{
-        position: relative;
+        /* position: relative; */
         width: 100%;
         height: 75%;
         top:40%;
       }
 
       #myphoto{
-        position: absolute;
         width: 50%;
-        height: 25%;
-        top: 15%;
-        left: 5%;
+        height: auto;
         border-radius: 50%; /*　円にする　*/
+        margin-left: 25%;
+        margin-top: 10%;
       }
 
       #profile{
-        position: absolute;
+        /* position: absolute; */
         top:35%;
         left:5%;
       }
 
       #name{
-        top:18%;
         font-size:x-large;
+        margin-left: 23vw;
       }
 
       span{
@@ -71,10 +69,10 @@
       }
 
       /* 以下、下部のcss指定 */
-      footer{
+      #bottom{
         width: 100%;
         bottom: 0;
-        position: absolute;
+        /* position: absolute; */
       }
 
       ul{
@@ -126,11 +124,12 @@
 
       #myphoto{
         position: absolute;
-        width: 15%;
-        height: 30%;
+        width: 25%;
+        height: auto;
         top: 20%;
         left: 5%;
         border-radius: 50%; /* 円にする */
+        display: inline-block;
       }
 
       #profile{
@@ -145,15 +144,16 @@
 
       span{
         text-align: center;
+        font-size: small;
       }
       
       .icon{
-        width: 50px;
-        height: 50px;
+        width: 100px;
+        height: 100px;
       }
 
       /* 以下、下部のcss指定 */
-      footer{
+      #bottom{
         width: 100%;
         bottom: 0;
         position: absolute;
@@ -176,7 +176,7 @@
 
 <body>
   <div id="toolbar">
-    <h1 id="title">Welcome.<br>Here is the page about me.</h1>
+    <!-- <h1 id="title">Welcome.<br>Here is the page about me.</h1> -->
     <!-- <button id="toolbar_button">×</button> -->
   </div>
   
@@ -184,19 +184,24 @@
     <img src="images/Fushimi-Inari75197191.jpg" id="myphoto">
     <br>
     <div id="profile">
-      <br><br><span id="name">Masaya Sonobe</span><br>
-      <span>I'm an undergraduate student in Doshisha University. My major is IT. My interests also includes English. Since I enrolled in this univ, I've tried IT and English. I've learned about C++ and Java in classes and then created an ios app with HTML/CSS/JavaScript as an activity unrelated to classes, using the framework called Cordova. A team I belong to is one of <a href="https://rohm.doshisha.ac.jp/project/overview.html">Rohm Memorial Hall Projects</a> in Doshisha.  Here is <a href="https://wapiwapi1729.wixsite.com/website">https://wapiwapi1729.wixsite.com/website</a></a>> introducing my team.</span>
+      <br><div id="name">Masaya Sonobe</div><br>
+      <span>Hello. I'm an undergraduate student in Doshisha University. 
+        My major is IT. My interests also includes English. 
+        Since I enrolled in this univ, I've been learning IT and English. 
+        I've learned about C++ and Java in classes and then created an ios app with HTML/CSS/JavaScript as an activity unrelated to classes, using the framework called Cordova. 
+        A team I belong to is one of <a href="https://rohm.doshisha.ac.jp/project/overview.html">Rohm Memorial Hall Projects</a> in Doshisha. 
+        Here is <a href="https://wapiwapi1729.wixsite.com/website">https://wapiwapi1729.wixsite.com/website</a></a> introducing my team.</span>
       <br><span>MAIL:masaya.tanks07@gmail.com</span>
     </div>
+    <div id="bottom">
+      <ul>
+        <li><a href="https://note.com/neko_be3"><img src="images/noteIcon.png" class="icon" id="aboutmeIcon"></a></li>
+        <li><a href="https://github.com"><img src="images/githubIcon.png" class="icon" id="githubIcon"></a></li>
+      </ul>
+      <p id="copyright">(c)cory right all reserved Be3</p>
+    </div>
   </div>
-  
-  <footer>
-    <ul>
-      <li><a href="https://note.com/neko_be3"><img src="images/noteIcon.png" class="icon" id="aboutmeIcon"></a></li>
-      <li><a href="https://github.com"><img src="images/githubIcon.png" class="icon" id="githubIcon"></a></li>
-    </ul>
-    <p id="copyright">(c)cory right all reserved Be3</p>
-  </footer>
+
  <script>
    
  </script>
